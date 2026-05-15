@@ -33,13 +33,13 @@ export function UIOverlay({
 
     let audioFile = '';
     
-    if (phase === 'APPROACH_DESK') { audioFile = '/audio/sedni_do_lavice.mp3';
+    if (phase === 'APPROACH_DESK') { audioFile = './audio/sedni_do_lavice.mp3';
     } 
     else if (phase === 'CLASSROOM_SITTING') {
-      audioFile = '/audio/jdu_pozde.mp3';
+      audioFile = './audio/jdu_pozde.mp3';
     } 
     else if (phase === 'TERMINAL_INTERACTION') {
-      audioFile = '/audio/zapis_sql_command.mp3'; 
+      audioFile = './audio/zapis_sql_command.mp3'; 
     }
 
     if (audioFile) {

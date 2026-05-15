@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     if (phase === 'GLITCH') {
-      const audio = new Audio('/sounds/glitch.mp3')
+      const audio = new Audio('./sounds/glitch.mp3')
       void audio.play().catch(() => undefined)
     }
   }, [phase])
