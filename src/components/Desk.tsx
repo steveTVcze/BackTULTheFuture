@@ -9,8 +9,7 @@ type DeskProps = {
 }
 
 export function Desk({ position, onClick, isPlayerDesk }: DeskProps) {
-  const { scene } = useGLTF('/models/lavice.glb')
-
+  const { scene } = useGLTF('./models/lavice.glb')
   const clonedScene = useMemo(() => {
     const clone = scene.clone()
     clone.traverse((child) => {
@@ -43,4 +42,4 @@ export function Desk({ position, onClick, isPlayerDesk }: DeskProps) {
   )
 }
 
-useGLTF.preload('/models/lavice.glb')
+useGLTF.preload('./models/lavice.glb')

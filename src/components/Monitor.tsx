@@ -2,7 +2,7 @@ import { useGLTF, Center, Clone } from '@react-three/drei'
 import { Suspense } from 'react'
 
 function MonitorModel({ onClick }: { onClick?: () => void }) {
-  const { scene } = useGLTF('/models/monitor.glb')
+  const { scene } = useGLTF('./models/monitor.glb')
 
   return (
     <Center bottom>
@@ -30,4 +30,4 @@ export function Monitor(props: any) {
   )
 }
 
-useGLTF.preload('/models/monitor.glb')
+useGLTF.preload('./models/monitor.glb')

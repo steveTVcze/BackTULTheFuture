@@ -4,7 +4,7 @@ import { useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
 
 export function KremenModel(props: any) {
-  const { scene } = useGLTF('/models/kremen.glb');
+  const { scene } = useGLTF('./models/kremen.glb');
   const groupRef = useRef<THREE.Group>(null!);
 
   useFrame((state, delta) => {
@@ -22,4 +22,4 @@ export function KremenModel(props: any) {
   );
 }
 
-useGLTF.preload('/models/kremen.glb');
+useGLTF.preload('./models/kremen.glb');
