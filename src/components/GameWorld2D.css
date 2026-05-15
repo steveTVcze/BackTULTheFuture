@@ -1,0 +1,172 @@
+/* Globální reset pro tuto komponentu */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #050505;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+
+.visual-header {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.vignette-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, transparent 40%, #050505 100%);
+  z-index: 1;
+}
+
+.location-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.three-d-slot {
+  width: 300px;
+  height: 300px;
+  border: 1px dashed rgba(0, 255, 136, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff88;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+}
+
+.ui-grid {
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 15px;
+  padding: 15px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #222;
+}
+
+.panel {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.story-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.log-output {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.log-normal { color: #888; }
+.log-error { color: #ff4444; }
+
+.hint-text {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.sql-input {
+  flex: 1;
+  background-color: #050505;
+  border: 1px solid #222;
+  color: #00ff88;
+  padding: 15px;
+  font-family: inherit;
+  resize: none;
+  border-radius: 4px;
+  outline: none;
+}
+.sql-input:focus {
+  border-color: #444;
+}
+
+.execute-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.execute-btn:hover {
+  background-color: #222;
+  border-color: #666;
+}
+
+.inventory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.inventory-item {
+  padding: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 13px;
+}
+.inventory-item:hover {
+  background: #252525;
+}
+.inventory-item.active {
+  border-color: #00ff88;
+  color: #00ff88;
+}
+
+.item-inspector {
+  margin-top: 15px;
+  padding: 15px;
+  background: #050505;
+  border: 1px dashed #444;
+  font-size: 12px;
+  color: #aaa;
+}
