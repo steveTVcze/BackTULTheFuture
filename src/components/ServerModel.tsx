@@ -4,7 +4,7 @@ import { useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
 
 export function ServerModel(props: any) {
-  const { scene } = useGLTF('/models/server.glb');
+  const { scene } = useGLTF('./models/server.glb');
   const groupRef = useRef<THREE.Group>(null!);
 
   useFrame((state, delta) => {
@@ -22,4 +22,4 @@ export function ServerModel(props: any) {
   );
 }
 
-useGLTF.preload('/models/server.glb');
+useGLTF.preload('./models/server.glb');

@@ -4,7 +4,7 @@ import { useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
 
 export function PryskyriceModel(props: any) {
-  const { scene } = useGLTF('/models/pryskyrice.glb');
+  const { scene } = useGLTF('./models/pryskyrice.glb');
   const groupRef = useRef<THREE.Group>(null!);
 
   useFrame((state, delta) => {
@@ -22,4 +22,4 @@ export function PryskyriceModel(props: any) {
   );
 }
 
-useGLTF.preload('/models/pryskyrice.glb');
+useGLTF.preload('./models/pryskyrice.glb');

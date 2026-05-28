@@ -4,7 +4,7 @@ import { useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
 
 export function OhenModel(props: any) {
-  const { scene } = useGLTF('/models/ohen.glb');
+  const { scene } = useGLTF('./models/ohen.glb');
   const groupRef = useRef<THREE.Group>(null!);
 
   useFrame((state, delta) => {
@@ -22,4 +22,4 @@ export function OhenModel(props: any) {
   );
 }
 
-useGLTF.preload('/models/ohen.glb');
+useGLTF.preload('./models/ohen.glb');

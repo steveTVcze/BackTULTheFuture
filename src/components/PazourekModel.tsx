@@ -4,7 +4,7 @@ import { useGLTF, Center } from '@react-three/drei'
 import * as THREE from 'three'
 
 export function PazourekModel(props: any) {
-  const { scene } = useGLTF('/models/pazourek.glb')
+  const { scene } = useGLTF('./models/pazourek.glb')
   const groupRef = useRef<THREE.Group>(null!)
 
   useFrame((state, delta) => {
@@ -22,4 +22,4 @@ export function PazourekModel(props: any) {
   )
 }
 
-useGLTF.preload('/models/pazourek.glb')
+useGLTF.preload('./models/pazourek.glb')
